@@ -1,6 +1,7 @@
 {
   "name": "react-example",
   "private": true,
+  "homepage": "https://github.com/eyadaldroubi/Online-Store.",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,7 +9,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
